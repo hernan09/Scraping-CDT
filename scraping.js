@@ -9,19 +9,18 @@ xray('http://asp3.clickexperts.net/mailtrack3/view/899/288/11633', 'div:nth-chil
   img: 'img@src'
 }])(function objeto(err, results) {
   results.map((result, i) => {
-    let obj1 = { result }
-    
+   
 
     let obj2 = new obj({
-      title :obj1.title,
-      body:obj1.body,
-      img:obj1.img
+      title:result.title,
+      body:result.body,
+      img:result.img
 
     })
     obj2.save((err)=>{
       if(err){console.log(err)
       }else{
-        console.log("todo ok")
+        console.log(obj2)
       }
     })
   })
