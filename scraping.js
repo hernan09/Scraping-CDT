@@ -1,6 +1,5 @@
 const Xray = require('x-ray')
 const xray = new Xray()
-const mongoose = require('mongoose')
 const obj = require('./model')
 
 
@@ -25,8 +24,5 @@ xray('http://asp3.clickexperts.net/mailtrack3/view/899/288/11633', 'div:nth-chil
         console.log("todo ok")
       }
     })
-    
-    
-    console.log(obj2)
   })
 })
